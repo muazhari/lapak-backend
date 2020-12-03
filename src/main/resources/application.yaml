@@ -13,10 +13,7 @@ server:
   port: 3000
 app:
   datasource:
-    jdbc-url: jdbc:postgresql://ec2-52-200-48-116.compute-1.amazonaws.com:5432/d8285njcqaltt3
-    username: cyutwrcxoykumg
-    password: d6d2df7f79e96486905f40e199f45792be6db3c31184b22bacf7fe3b0f3f5e0d
-#    jdbc-url: jdbc:postgresql://john.db.elephantsql.com/nbzubzvy
-#    username: nbzubzvy
-#    password: SVUz666RWjEOFDYrXX0hMsklbVtGTePR
+    jdbc-url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
     pool-size: 30
